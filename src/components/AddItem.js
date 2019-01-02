@@ -23,7 +23,7 @@ class AddItem extends Component{
           <option disabled value="select">Choose a Product</option>
           {this.options()}
         </select>
-        <button type="submit" onClick={this.props.addItem}>Submit</button>
+        <button type="submit" onClick={this.props.addItem} className="mt-1">Add</button>
       </form>
     </div>
    )

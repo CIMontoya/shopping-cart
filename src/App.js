@@ -4,6 +4,7 @@ import footer from './components/CartFooter'
 import Items from './components/CartItems'
 import AddItem from './components/AddItem'
 
+
 class App extends Component {
   constructor(){
     super()
@@ -77,6 +78,15 @@ class App extends Component {
       total: total.toFixed(2),
       message: ""
     })
+  }
+
+  scrollToBottom(){
+    var element = document.querySelector(".scroll")
+    element.scrollTop = element.scrollHeight
+  }
+
+  componentDidUpdate(){
+    this.scrollToBottom()
   }
 
   render() {
